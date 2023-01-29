@@ -4,8 +4,12 @@
   <div class="mx-4">
     <x-card class="p-10">
       <div class="flex flex-col items-center justify-center text-center">
-        <img class="w-48 mr-6 mb-6"
-          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}" alt="" />
+
+      <h2>To get the link to the Meme, Click in the meme 😌 </h2>
+       
+      <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
+          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}" alt="" /> 
+        </a>
 
         <h3 class="text-2xl mb-2">
           {{$listing->title}}
@@ -31,6 +35,10 @@
             <a href="{{$listing->website}}" target="_blank"
               class="block bg-black text-white py-2 rounded-xl hover:opacity-80"><i class="fa-solid fa-globe"></i>
               Visit Website</a>
+
+                          <a href="{{URL::current()}}" target="_blank"
+              class="block bg-black text-white py-2 rounded-xl hover:opacity-80"><i class="fa-solid fa-globe"></i>
+              Current websie</a>
           </div>
         </div>
       </div>
