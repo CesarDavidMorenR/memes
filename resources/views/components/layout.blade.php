@@ -55,6 +55,7 @@
       </li>
       @endauth
     </ul>
+
   </nav>
 
   <main>
