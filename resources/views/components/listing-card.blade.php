@@ -1,9 +1,10 @@
 @props(['listing'])
 
 <x-card>
+   <h2>To get the link to the Meme, Click in the meme 😌 </h2>
   <div class="flex">
 
-   <h2>To get the link to the Meme, Click in the meme 😌 </h2>
+  
 
   <a href="/storage/{{$listing->logo}}"> 
     <img class="hidden w-48 mr-6 md:block"

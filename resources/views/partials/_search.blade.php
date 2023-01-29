@@ -1,12 +1,13 @@
-
-        <ul class="flex space-x-6 mr-3 text-lg">
+<div class="align-center text-center justify-center  relative w-70 flex flex-col ">
+        <ul class="flex space-x-6 mx-auto text-lg ">
  <li>
-        <a href="?location=gifs" class="hover:text-laravel"><i class="fa-solid fa-arrow-right-to-bracket"></i>Gifs</a>
+        <a href="?location=gifs" class="hover:text-laravel"><i class="fa-solid fa-folder-open"></i>Gifs</a>
       </li>
        <li>
-        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-arrow-right-to-bracket"></i>Imagen estatica</a>
+        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-folder-open"></i>Imagen estatica</a>
       </li>
     </ul>
+</div>
 <form action="/">
   <div class="relative border-2 border-gray-100 m-4 rounded-lg">
     <div class="absolute top-4 left-3">
