@@ -15,9 +15,9 @@
     </div>
     
     <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
-      placeholder="Search Laravel Gigs..." />
+      placeholder="Search programming memes💾..." />
     <div class="absolute top-2 right-2">
-      <button type="submit" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">
+      <button type="submit" class="h-10 w-20 text-white rounded-lg bg-black hover:bg-red-600">
         Search
       </button>
     </div>
@@ -27,7 +27,11 @@
     @endforeach -->
 
      @if($listings)
-     Por tags
+      
+     Por tags   <h1 class="text-6xl text-center font-bold uppercase text-white">
+      Programming<span class="text-yellow-500">Memes</span>
+    </h1>
+    
        <x-listing-tags :tagsCsv="$listing->tags" />
      Por nombre de compañias = laravel, php,etc..
 <ul class="flex">
