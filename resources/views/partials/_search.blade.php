@@ -4,7 +4,7 @@
         <a href="?location=gifs" class="hover:text-laravel"><i class="fa-solid fa-folder-open mr-1"></i>Gifs</a>
       </li>
        <li>
-        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-folder-open mr-1"></i>Imagen estatica</a>
+        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-folder-open mr-1"></i>Static Image</a>
       </li>
     </ul>
 </div>
