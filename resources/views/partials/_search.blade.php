@@ -9,7 +9,7 @@
     </ul>
 </div>
 <form action="/">
-  <div class="relative border-2 border-gray-100 m-4 rounded-lg">
+  <div class="relative border-2 border-gray-100 m-4 rounded-lg ">
     <div class="absolute top-4 left-3">
       <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
     </div>
@@ -23,17 +23,19 @@
     </div>
     <!-- @foreach($listings as $listing)
     
-       <x-listing-tags :tagsCsv="$listing->tags" />
+<x-listing-tags :tagsCsv="$listing->tags" />
     @endforeach -->
 
-     @if($listings)
+ @if($listings)
       
-     Por tags   <h1 class="text-6xl text-center font-bold uppercase text-white">
-      Programming<span class="text-yellow-500">Memes</span>
+      <h1 class="text-6xl text-center font-bold uppercase text-black">
+      Filter<span class="text-yellow-500">The Memes</span>
     </h1>
     
+    <div class="m-auto w-1/2 text-center">
+  <h2 class="text-2xl font-bold text-blue-500">Por tags</h2>
        <x-listing-tags :tagsCsv="$listing->tags" />
-     Por nombre de compañias = laravel, php,etc..
+     <h2 class="text-2xl text-blue-500 font-bold">Por nombre de compañias = laravel, php,etc..</h2>
 <ul class="flex">
  
   @foreach($listings as $listing)
@@ -46,7 +48,7 @@
 
          
      <!-- Por nombre de  -->
-     Por Gifs o Imagenes estaticas
+     <h2 class="text-2xl font-bold text-blue-500">Por Gifs o Imagenes estaticas</h2>
 <ul class="flex">
  
   @foreach($listings as $listing)
@@ -56,7 +58,7 @@
   </li>
   @endforeach
 </ul>
-
+</div>
 
 
    @else

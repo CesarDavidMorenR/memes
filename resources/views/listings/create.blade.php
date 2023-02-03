@@ -1,14 +1,14 @@
 <x-layout>
   <x-card class="p-10 max-w-lg mx-auto mt-24">
     <header class="text-center">
-      <h2 class="text-2xl font-bold uppercase mb-1">Create a Gig</h2>
-      <p class="mb-4">Post a gig to find a developer</p>
+      <h2 class="text-2xl font-bold uppercase mb-1">Post a Meme</h2>
+      <p class="mb-4">Post a Meme to make laught a developer</p>
     </header>
 
     <form method="POST" action="/listings" enctype="multipart/form-data">
       @csrf
       <div class="mb-6">
-        <label for="company" class="inline-block text-lg mb-2">Company Name</label>
+        <label for="company" class="inline-block text-lg mb-2">Creator of the MeMe</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="company"
           value="{{old('company')}}" />
 
@@ -18,7 +18,7 @@
       </div>
 
       <div class="mb-6">
-        <label for="title" class="inline-block text-lg mb-2">Job Title</label>
+        <label for="title" class="inline-block text-lg mb-2">Title of the MeMe</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="title"
           placeholder="Example: Senior Laravel Developer" value="{{old('title')}}" />
 
@@ -28,7 +28,7 @@
       </div>
 
       <div class="mb-6">
-        <label for="location" class="inline-block text-lg mb-2">Job Location</label>
+        <label for="location" class="inline-block text-lg mb-2">About waht Programming language is the MeMe? </label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="location"
           placeholder="Example: Remote, Boston MA, etc" value="{{old('location')}}" />
 
@@ -74,7 +74,7 @@
 
       <div class="mb-6">
         <label for="logo" class="inline-block text-lg mb-2">
-          Company Logo
+          MeMe
         </label>
         <input type="file" class="border border-gray-200 rounded p-2 w-full" name="logo" />
 
@@ -85,7 +85,7 @@
 
       <div class="mb-6">
         <label for="description" class="inline-block text-lg mb-2">
-          Job Description
+          MeMe Description
         </label>
         <textarea class="border border-gray-200 rounded p-2 w-full" name="description" rows="10"
           placeholder="Include tasks, requirements, salary, etc">{{old('description')}}</textarea>
@@ -97,7 +97,7 @@
 
       <div class="mb-6">
         <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-          Create Gig
+          Post the MeMe
         </button>
 
         <a href="/" class="text-black ml-4"> Back </a>

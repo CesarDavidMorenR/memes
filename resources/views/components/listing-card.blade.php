@@ -28,7 +28,7 @@
       
       <div class="text-lg mt-4">
 
-        <i class="fa-solid fa-location-dot"></i> {{$listing->location}}
+        <i class="fa-solid fa-face-laugh-squint"></i> {{$listing->location}}
       </div>
     </div>
   </div>
