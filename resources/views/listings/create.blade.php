@@ -83,6 +83,18 @@
         @enderror
       </div>
 
+            <div class="mb-6">
+        <label for="logoLink" class="inline-block text-lg mb-2">
+          Logo by Url
+        </label>
+        <input type="text" class="border border-gray-200 rounded p-2 w-full" name="logoLink"
+          value="{{old('logoLink')}}" />
+
+        @error('logoLink')
+        <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+        @enderror
+      </div>
+
       <div class="mb-6">
         <label for="description" class="inline-block text-lg mb-2">
           MeMe Description

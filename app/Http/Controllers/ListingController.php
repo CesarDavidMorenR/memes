@@ -34,6 +34,7 @@ class ListingController extends Controller
             'company' => ['required', Rule::unique('listings', 'company')],
             'location' => 'required',
             'website' => 'required',
+            'logoLink',
             'email' => ['required', 'email'],
             'tags' => 'required',
             'description' => 'required'

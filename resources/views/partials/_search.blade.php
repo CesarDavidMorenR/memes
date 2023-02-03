@@ -1,10 +1,10 @@
 <div class="align-center text-center justify-center  relative w-70 flex flex-col ">
         <ul class="flex space-x-6 mx-auto text-lg ">
  <li>
-        <a href="?location=gifs" class="hover:text-laravel"><i class="fa-solid fa-folder-open"></i>Gifs</a>
+        <a href="?location=gifs" class="hover:text-laravel"><i class="fa-solid fa-folder-open mr-1"></i>Gifs</a>
       </li>
        <li>
-        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-folder-open"></i>Imagen estatica</a>
+        <a href="?location=static" class="hover:text-laravel"><i class="fa-solid fa-folder-open mr-1"></i>Imagen estatica</a>
       </li>
     </ul>
 </div>
@@ -33,9 +33,9 @@
     </h1>
     
     <div class="m-auto w-1/2 text-center">
-  <h2 class="text-2xl font-bold text-blue-500">Por tags</h2>
+  <h2 class="text-2xl font-bold text-blue-500">By tags</h2>
        <x-listing-tags :tagsCsv="$listing->tags" />
-     <h2 class="text-2xl text-blue-500 font-bold">Por nombre de compañias = laravel, php,etc..</h2>
+     <h2 class="text-2xl text-blue-500 font-bold">Name of the language</h2>
 <ul class="flex">
  
   @foreach($listings as $listing)
@@ -48,7 +48,7 @@
 
          
      <!-- Por nombre de  -->
-     <h2 class="text-2xl font-bold text-blue-500">Por Gifs o Imagenes estaticas</h2>
+     <h2 class="text-2xl font-bold text-blue-500">By description</h2>
 <ul class="flex">
  
   @foreach($listings as $listing)
