@@ -1,0 +1,1 @@
+NIXPACKS_BUILD_CMD=composer install && php artisan migrate --force && php artisan db:seed --force
