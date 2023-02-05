@@ -12,12 +12,13 @@
  src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
 -->
 
+@if($listing->logo)
       <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
      
          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
           alt="" /> 
 
-          
+          @else
         </a>
               <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
      
@@ -26,7 +27,7 @@
 
           
         </a>
-
+@endif
 
         <h3 class="text-2xl mb-2">
           {{$listing->title}}
