@@ -3,8 +3,8 @@
     style="background-image: url('images/laravel-logo.png')"></div>
 
   <div class="z-10">
-    <h1 class="text-6xl font-bold uppercase text-white">
-      Programming<span class="text-yellow-500">Memes</span>
+    <h1  class="text-6xl text-center break-words font-bold uppercase text-white">
+      PROGRAMMING<span class="text-yellow-500">MEMES</span>
     </h1>
     <p class="text-2xl text-gray-200 font-bold my-4">
      Find all the programming Memes you dream of

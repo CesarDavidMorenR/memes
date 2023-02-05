@@ -19,9 +19,9 @@
       </div>
 
       <div class="mb-6">
-        <label for="title" class="inline-block text-lg mb-2">Job Title</label>
+        <label for="title" class="inline-block text-lg mb-2">Meme Title</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="title"
-          placeholder="Example: Senior Laravel Developer" value="{{$listing->title}}" />
+          placeholder="Example: Don't forget de delete from " value="{{$listing->title}}" />
 
         @error('title')
         <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -31,7 +31,7 @@
       <div class="mb-6">
         <label for="location" class="inline-block text-lg mb-2">Job Location</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="location"
-          placeholder="Example: Remote, Boston MA, etc" value="{{$listing->location}}" />
+          placeholder="Example: html,css ,javascripts" value="{{$listing->location}}" />
 
         @error('location')
         <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -92,7 +92,7 @@
           Job Description
         </label>
         <textarea class="border border-gray-200 rounded p-2 w-full" name="description" rows="10"
-          placeholder="Include tasks, requirements, salary, etc">{{$listing->description}}</textarea>
+          placeholder="Write anything you want">{{$listing->description}}</textarea>
 
         @error('description')
         <p class="text-red-500 text-xs mt-1">{{$message}}</p>

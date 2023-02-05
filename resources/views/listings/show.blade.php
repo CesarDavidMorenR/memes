@@ -12,26 +12,42 @@
  src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
 -->
 
-@if($listing->logo)
-      <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
+
+      <a href="/storage/{{$listing->logo}}"> 
+        
+      <img class="w-48 mr-6 mb-6"
      
          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
           alt="" /> 
 
-          @else
-        </a>
-              <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
+</a>
+
+
+@if ('$listing->logo')
+         <a href="/storage/{{$listing->logo}}"> 
+        
+      <img class="w-48 mr-6 mb-6"
      
-         src="{{$listing->logoLink}}"
+         src="{{ asset('storage/' . $listing->logo) }}"
           alt="" /> 
 
-          
-        </a>
+</a>
+@elseif ('$listing->logoLink')
+  <p>Funciona SD</p>
+
+@else
+    <p>Notging else matters</p>
 @endif
+
+
+
+
+
 
         <h3 class="text-2xl mb-2">
           {{$listing->title}}
         </h3>
+
         <div class="text-xl font-bold mb-4">{{$listing->company}}</div>
 
         <x-listing-tags :tagsCsv="$listing->tags" />
