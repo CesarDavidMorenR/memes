@@ -7,8 +7,12 @@
 
       <h2>To get the link to the Meme, Click in the meme 😌 </h2>
        
+<!--   Three conditions Ternary Operator   src="{{($listing->logo ? asset('storage/' . $listing->logo) : $listing->logoLink) ? $listing->logoLink : asset('/images/no-image.png')}}"  -->
+
       <a href="/storage/{{$listing->logo}}"> <img class="w-48 mr-6 mb-6"
-          src="{{($listing->logo ? asset('storage/' . $listing->logo) : $listing->logoLink) ? $listing->logoLink : asset('/images/no-image.png')}}" alt="" /> 
+     
+          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
+          alt="" /> 
         </a>
 
         <h3 class="text-2xl mb-2">
